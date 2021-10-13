@@ -1,0 +1,194 @@
+/* stile generale */
+html{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+* {box-sizing:border-box}
+body{
+    margin: 0;
+    background-color: #9ED8DB;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.bottone{
+    background-color: coral;
+    padding:0.4rem 1rem;
+    cursor: pointer;
+    margin: 2rem;
+    border-radius:3px
+}
+input{
+    margin-left:3rem;
+    margin-right: 3rem;
+}
+textarea{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav >span{
+ padding: 1rem;
+ font-weight: bold;
+}
+.nav >span>a{
+ color:white;
+
+}
+.nav >span:hover{
+    border-bottom: 2px rgb(231, 228, 27) solid;
+}
+#logo{
+    width:150px;
+    border:none;
+}
+#search{
+    text-align: right;
+}
+.toggleMenu{
+    display:none;
+}
+.nav{
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* main{
+    padding-top:100px;
+} */
+/* STILE FOOTER */
+footer{
+    text-align: center;
+    margin-top:2rem;
+}
+address > span > a{
+    text-decoration: none;
+    color: black;
+    font-size:1.2rem;
+    padding:0.5rem;
+    }
+    .copyright{
+        margin-top:1rem;
+    }
+
+
+/* LAYOUT INDEX */
+.border{
+    border: 1px solid black;
+    text-align: center;
+}
+.flex{
+    display:flex;
+    padding:1rem;
+    justify-content: center;
+}
+
+/*newsletter form*/
+.flexColumn{
+    display:flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+}
+#email{
+    text-align: center;
+}
+.flex1{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: rgba(0, 0, 0, 0.164);
+    background: linear-gradient(180deg, rgba(0,0,0,0.25) 37%, rgba(69, 69, 69, 0) 80%, rgba(255,255,255,0) 100%);
+}
+#terms{
+    margin-top: 0.5rem;
+    font-size:0.7rem
+}
+#terms a{
+    text-decoration: underline;
+}
+
+/* slideshow */
+.mySlides {display: none}
+.mySlides > img{
+    max-height:400px;
+    width: 80%;
+}
+img {vertical-align: middle;}
+
+.slideshow-container {
+    margin: 0;
+}
+.text {
+    color: #000000;
+    font-size: 3rem;;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/*CSS TRAVELS.PHP*/
+
+.travelCardsFlex{
+    margin: 2rem;
+    display: flex;
+    background-color:rgba(255, 255, 255, 0.445);
+    height: 180px;
+    padding:0.1rem;
+}
+.travelCardsFlex:hover{
+    border:2px solid rgb(109, 9, 29);
+    padding:0;
+}
+.immagine{
+    height:100%;
+    width:177px;
+}
+.card{
+    background-color:rgba(255, 255, 255, 0.39);
+    width:100%;
+}
+.cardTitle{
+    margin-bottom: 0.5rem;
+    padding:0.2rem 1rem ;
+}
+.cardDescription{
+    margin-bottom: 1.5rem;
+    padding:0.2rem 0.8rem;
+    height: 80px;
+    overflow-y: scroll;
+}
+.cardDescription::-webkit-scrollbar {
+    width: 7px;
+}
+.cardDescription::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey; 
+    border-radius: 10px;
+}
+.cardDescription::-webkit-scrollbar-thumb {
+    background: rgba(7, 7, 7, 0.513); 
+    border-radius: 10px;
+}
+.cardDescription::-webkit-scrollbar-thumb:hover {
+    background: #9b9b9b; 
+}
+
+/* CSS ADMIN*/
+.inline{
+    display: inline;
+}
+
+
+/* MEDIA SCREEN PER SCHERMI PIU PICCOLI*/
