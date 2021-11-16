@@ -6,33 +6,9 @@ $query = $db->prepare($select);
 $query->execute();
 
 $immagini = $query->fetchAll(PDO::FETCH_ASSOC);
+
+include_once('./php/parts/header.php');
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
-        <navbar class='nav flex1'>
-            <span><a href="#"><img id="logo" src="assets/logo/logo_small.png"></a></span>
-            <span><a href="#">Home</a></span>
-            <span><a href="php/travels.php">Travels</a></span>
-            <span><a href="#">Contact</a></span>
-            <span><a href="php/admin.php">Admin</a></span>
-            <span class='toggleMenu'><i class="fas fa-bars"></i></span>
-            <span id='search'><a href="#"><i class="fas fa-search"></i></a></span> 
-        </navbar> 
-    </header>
     
     <main>
         <div class="slideshowContainer">
@@ -80,25 +56,8 @@ $immagini = $query->fetchAll(PDO::FETCH_ASSOC);
         </form>
     </div>
 
-    <footer>
-        <div class='flex'>
-            <div><span>LOGO</span></div>
-            <div>
-               <address>
-                    <span class="social">
-                        <a href='https://www.facebook.com/VisitBrasil/'><i class="fab fa-facebook-f"></i></a>
-                        <a href='https://www.instagram.com/visitbrasil/'><i class="fab fa-instagram-square"></i></a>
-                        <a href='https://twitter.com/visitbrasil'><i class="fab fa-twitter"></i></a>
-                        <a href='https://www.youtube.com/user/visitbrasil'><i class="fab fa-youtube"></i></a>
-                        <a href='https://www.flickr.com/photos/visitbrasil/albums0'><i class="fab fa-flickr"></i></a>
-                        <a href='https://open.spotify.com/user/1qov39ixr9smyct2ozsdnpmc1'><i class="fab fa-spotify"></i></a>
-                    </span>
-                    <div class='copyright'>&#169; 2021 Company name | All rights reserved</div>
-                </address> 
-            </div>
-        </div>
-    </footer>
 <?php
+include_once('./php/parts/footer.php');
 echo '
 <script>
 var slideIndex = 0;
@@ -119,6 +78,3 @@ function showSlides() {
 '    
 ?>
 
-</body>
-
-</html>
